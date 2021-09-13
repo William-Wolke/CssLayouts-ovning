@@ -154,19 +154,10 @@ section{
     text-align: center;
     background-color: cadetblue;
 }
-
-.l3-paragraph{
-
-}
-
 #l3-bigbox{
     margin: 2em 2em 2em 0;
     border: solid black 0.01em;
     text-align: center;
-}
-
-#l3-aside{
-
 }
 
 #l3-aside-box{
@@ -207,8 +198,15 @@ section{
 
 /*Layout 5*/
 
+#l5-body{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 68% 29%;
+    grid-column-gap: 3%;
+}
+
 #l5-main{
-    width: 60%;
+    width: 100%;
 }
 
 #l5-nav{
@@ -250,17 +248,32 @@ section{
 }
 
 .l5-small-paragraph{
-    width: 9em;
+    max-width: 9em;
+    min-height: 7em;
+    text-align: center;
 }
 
 #l5-aside{
-    width: 40%;
+    width: 100%;
 }
 
 #l5-aside-nav{
-
+    display: flex;
+    justify-content: flex-end;
 }
 
 .l5-aside-navs{
+    width: 2em;
+    background-color: blueviolet;
+    width: 3em;
+}
 
+.l5-aside-container{
+    display: flex;
+    
+}
+
+.l5-aside-boxes{
+    background-color: cornflowerblue;
+    padding: 3em;
 }
