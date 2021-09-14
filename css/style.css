@@ -193,8 +193,94 @@ section{
 }
 
 /*Layout4*/
+#l4-body{
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-gap: 1em;
+}
 
+#l4-main{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
 
+#l4-nav{
+    display: grid;
+    grid-template-columns: repeat( 3, 5em);
+    text-align: center;
+}
+
+#l4-nav > div{
+    background-color: steelblue;
+}
+
+#l4-header{
+    width: 100%;
+    background-color: rosybrown;
+    height: 5em;
+}
+
+#l4-gallery{
+    display: grid;
+    grid-gap: 1em;
+}
+
+.l4-gallery-big-image{
+    width: 100%;
+    background-color: seagreen;
+    height: 20em;
+}
+
+#l4-gallery-small-image-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 7em);
+    grid-gap: 0.5em;
+
+}
+
+.l4-gallery-small-image{
+    background-color: skyblue;
+}
+
+.l4-row{
+    width: 100%;
+    background-color: skyblue;
+    text-align: center;
+}
+
+#l4-article{
+    line-height: 1.5em;
+}
+
+#l4-aside-nav{
+    display: grid;
+    grid-template-columns: repeat(3, 3em);
+    justify-content: end;
+    text-align: center;
+    grid-gap: 1em;
+}
+
+#l4-aside-nav > div{
+    background-color: steelblue;
+}
+
+#l4-aside-article-container{
+    display: grid;
+    grid-template-columns: repeat( 2, 25% 75%, 2, 25% 75%);
+    grid-gap: 1em;
+}
+
+.l4-aside-small-image{
+    background-color: teal;
+    text-align: center;
+
+}
+/*Här fick jag inte det att funka när de hade en extra klass så detta blev lösningen*/
+#l4-aside-long-atricle1, #l4-aside-long-atricle2{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
 
 /*Layout 5*/
 
@@ -276,4 +362,15 @@ section{
 .l5-aside-boxes{
     background-color: cornflowerblue;
     padding: 3em;
+}
+
+/* ----------- Galaxy Tab 2 ----------- */
+
+/* Portrait and Landscape */
+@media 
+  (min-device-width: 800px) 
+  and (max-device-width: 1280px) {
+    #l4-body{
+        display: block;
+    }
 }
